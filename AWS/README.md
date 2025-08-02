@@ -133,6 +133,32 @@
 
 - AWS Fargate
 <img width="2334" height="948" alt="image" src="https://github.com/user-attachments/assets/aba10bca-0d05-4569-bc5c-475f12bfd3e6" /><br>
+---
+
+# Redes em AWS
+
+## Amazon VPC
+- Seria tipo um escritório na nuvem
+- VPC: Virtual Private Cloud
+- Permite construir e configurar redes virtuais na AWS
+- Sub-redes: privadas e públicas
+- "Tudo começa dentro de um VPC"
+
+## Conectividade com AWS
+- Conectar a VPC a sub-redes públicas e privadas (gateway da internet e gatewae privado virtual)
+- AWS Direct Connect é uma conexão dedicada
+
+## Sub-redes e listas de controle de acesso
+- Network ACLs
+  - É uma configuração que prove controle do que entra e do que sai
+  - Comportamento Stateless
+  - Por padrão, permite todo tráfego de entrada e saída (precisa ajusatar)
+- Grupos de segurança
+  - Controle tráfego de entrada e saída de instância EC2
+  - Comportamento Stateful
+  - Por padrão, nega todo tráfego de entrada e permite todo tráfego de saída (precisa ajusatar)
+ 
+<img width="726" height="384" alt="image" src="https://github.com/user-attachments/assets/44cc857e-97c4-4419-b317-d93cb5354bb3" /><br>
 
 
 ---
