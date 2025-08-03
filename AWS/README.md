@@ -268,13 +268,70 @@
    - Usando Redshift Spectrum é possível rodar comandos SQL em cima de todas as fontes de dados agrupadas
 ---
 
+# Projeto realizado durante o curso
+Repositório -> https://github.com/andressasmedeiros/relatorio_AWS
 
+---
+# Segurança na nuvem com AWS
 
+## Modelo de responsabilidade compartilhada
 
+<img width="866" height="322" alt="image" src="https://github.com/user-attachments/assets/7cb945e6-c341-46ce-a070-cee2c85ee76b" /><br>
+<img width="877" height="447" alt="image" src="https://github.com/user-attachments/assets/87385d2b-0c54-4dae-a260-750a61e722f7" /><br>
 
+- Segurança da nuvem
+  - Responsável: AWS
+  - Segurança física dos data centers
+  - Infraestrutura de hardware e software
+  - Infraesctrutura de rede
+  - Infraestrutura de virtualização
+ 
+- Segurança na nuvem
+  - Responsável: CLiente
+  - Controle total sobre o conteúdo
+  - Controle de acesso e permissões
+  - Patches de segurança
+  - Muda conforme o serviço utilizado
 
+## Criptografia
+- Informações que queremos proteger:
+  - Respouso: Dados em um volume EBS, em buckets S3
+  - Trânsito: Dados que estão sendo enviados de uma origem para um destino
+- AWS Key Management Service (KMS)
+  - Gestão e controle de chaves criptografadas
+  - Controle de acesso e autorização
 
+## Gerenciamento de acessos
+- AWS IAM
+  - Gerenciamento de acesos e identidades
+  - Recursos:
+    1. Criação de usuários, grupos, políticas e roles
+    2. Ativação de MFA
+    3. Definir políticas de senha
+    4. Suporte a federação
+  - Usuários:
+    1. Representa uma identidade criada na AWS
+    2. Pode ser uma pessoa ou aplicação
+    3. Composto por nomes e credenciais
+    4. Conceito do privilégio mínimo
+  - Plíticas IAM
+    1. Criadas e anexadas as identidades IAM ou a recursos
+    2. É um objeto que define as permissões
+    3. São armazenadas na AWS como documentos JSON
+    4. Alto nível de granularidade
+    <img width="802" height="324" alt="image" src="https://github.com/user-attachments/assets/5a9faac2-69a9-4f2b-8dce-23bde815d07e" />
 
+  - Roles:
+    1. Pode ser entendido como uma função
+    2. Identidade IAM com permissões específicas
+    3. Pode ser assumida por mais de um usuário (não tem senha)
+    4. Usuários, aplicativos ou serviços podem utilizar roles
+
+## AWS Organizarions
+- Você pode unir contas AWS para evitar dificuldade de gerenciar custos
+- Serviço gratuito
+- Agrupamento hierárquicos
+- Possibilida utilizar políticas de controle de serviço (SCPs)
 
 
 
