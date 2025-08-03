@@ -160,6 +160,123 @@
  
 <img width="726" height="384" alt="image" src="https://github.com/user-attachments/assets/44cc857e-97c4-4419-b317-d93cb5354bb3" /><br>
 
+---
+
+# Armazenamento e Banco de dados AWS
+
+## Armazenamento Elastic Block Store -EBS
+### Usando o EC2
+- Volume Instance Store
+  - Armazenamento de Blocos
+  - Discos anexados fisicamente ao computador host
+  - Ideal para dados de armazenamento temporário como buffers, caches, dados de rascunho
+- Dados serão perdidos se
+  - Falha de disco de uma unidade
+  - Instância parada
+  - Instância hibernada
+  - Instância enverrada
+
+### Usando o EBS
+- Armazenamento em blocos
+- Block, blocos = HD físico
+- Projetado para EC2
+- HDs são chamados de "volumes"
+  1. Defina o tipo de volume
+  2. Escolha tamanho e configurações
+  3. Anexe o volume e uma Instância EC2
+
+<img width="723" height="258" alt="image" src="https://github.com/user-attachments/assets/15476079-7b80-4f62-a0e4-0747fe019f63" /><br>
+
+- Backups funcionam em Snapshots / Backup Incremental
+
+<img width="885" height="390" alt="image" src="https://github.com/user-attachments/assets/b809612d-d88d-4ee6-afe6-e5a826ef1794" /><br>
+
+## Amazon S3 (Simple Storage Service)
+- Armazenamento de objetos (Dados, Metadados, Chave)
+  > Valor (Dados): O contúdo que você está armazenando
+  > Metadados: Um conjunto de pares de nome-valor com o qual é possível armazenar informações relacionadas ao objeto
+  > Chave: Nome que você atribui ao objeto. Usado para recuperar o objeto
+- Os uploads dos objetos estão dentro dos buckets (data.json)
+  > Máximo 100 buckets na sua conta
+  > Objetos de 0 a 5TB de tamanho
+  > É um contêiner para objetos armazenados no Amazon S3
+- Casos de uso mais comuns
+  - Data Lakes
+  - Arquivamento de dados
+  - Hospedagem de sites estáticos
+- Existem classes de armazenamento com benefícios diferentes de acordo com a sua necessidade
+  > https://aws.amazon.com/pt/s3/storage-classes/
+
+## EFS - Amazon Elastic File System
+- Fornece um sistema de arquivos
+- Servless e totalmente elástico
+- Escala até Petabytes
+- Aumente e diminua conforme adição e remoção de arquivos
+- Compatível com protocolo NFS
+- Pode ser acessado por EC2, Lambda, ECS
+- Acesso simultâneo aos mesmos dados sem problemas de performânce
+
+<img width="759" height="562" alt="image" src="https://github.com/user-attachments/assets/59129cba-1c47-4b05-bbac-7ed32af93dbd" /><br>
+<img width="758" height="560" alt="image" src="https://github.com/user-attachments/assets/0f19fd1b-37ed-4e4a-8482-4455947b343d" /><br>
+
+## Amazon Relational Database Service
+- Facilita configuração e provisionamento de hardware
+- Patches automatizados
+- Backups
+- Redundância
+- Failover e Recuperação de Desastres
+- Mecanismos compatíveis
+  - MySQL
+  - PostgreSQL
+  - MariaDB
+  - Oracle
+  - SQL Server
+ 
+- Amazon Aurora é um Servless com mecanismo compatível com PostgreSQL e MySQL. Seu preço é 1/10 de outros vendors e tem backup contínuo via S3. Tem replicação multi-regional e suporta até 15 réplicas de leituras.
+
+## Outros serviços de banco de dados
+- Amazon DocumentDB
+  - Banco de dados de documentos  
+  - Ideal para catálogos, perfis de usuário  
+  - Compatível com MongoDB  
+
+- Amazon Neptune
+  - Banco de dados de grafos  
+  - Ideal para redes sociais, sistemas de recomendação, detecção de fraudes  
+  - Suporte a Gremlin e SPARQL
+  
+- Amazon QLDB
+  - Banco de dados ledger imutável  
+  - Ideal para registros financeiros, cadeia de suprimentos, histórico de transações  
+  - Mantém trilha de auditoria verificável criptograficamente  
+
+- Amazon DynamoDB Accelerator (DAX)
+  - Cache em memória para DynamoDB  
+  - Ideal para aplicações em tempo real, leitura de alta velocidade  
+  - Reduz latência de milissegundos para microssegundos  
+
+- Amazon ElastiCache
+  - Cache em memória gerenciado  
+  - Ideal para sessões de usuário, rankings em tempo real, cache de consultas  
+  - Suporte para Redis e Memcached
+
+
+## Big Data com Amazon Redshift
+   - Serviço de Data Warehouse para análise de Big Data
+   - Oferece coletar informações de muitas fontes de dados
+   - Projeta relações e tendências de dados
+   - Usando Redshift Spectrum é possível rodar comandos SQL em cima de todas as fontes de dados agrupadas
+---
+
+
+
+
+
+
+
+
+
+
 
 ---
 > ⚠️ **Observação:** Este módulo de estudos foi desenvolvido com base no curso disponibilizado pela plataforma DIO. Algumas imagens e conteúdos utilizados pertencem à plataforma e são empregados aqui exclusivamente para fins didáticos, visando a fixação do meu aprendizado.
