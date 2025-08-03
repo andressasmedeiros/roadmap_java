@@ -26,16 +26,24 @@
 - Composto por Regiões e Zonas de disponibilidade
    - Regiões:
      > Locais onde são hospedados os data centers
-     > cada Região possuem locais isolados chamados de Zonas de Disponibilidade
+     > 
+     > Cada Região possuem locais isolados chamados de Zonas de Disponibilidade
+     > 
      > Isolamento de Dados
+     > 
      > Regulação de dados local
+     > 
      > conectadas com rede de alta velocidade
      
    - Disponibilidade:
      > Também chamads de AZs (Availability Zones)
+     > 
      > Agrupamento de datacenters isolados dentro de uma Região
+     > 
      > Rede, energia e conectividade redundantes
+     > 
      > Próximas o suficiente para manter baixa latência, longe o suficiente para evitar que um desastre afete mais de uma AZ
+     > 
      > Recomendações: Execute pelo menos em duas AZs
    
 - Vantagens: Alta disponibilidade, Tolerância e falhas
@@ -47,8 +55,11 @@
 - Funcionam como pontos específicos pelo globo para distribuir conteúdo de forma rápida
 - Exemplos de serviços que se encontram nos locais de borda: Route 53 (DNS), Cloud Front (CDN)
   > Amazon CloudFront (Serviço de entrega de conteúdo (CDN)
+  > 
   > Melhora a performance do seu serviço
+  > 
   > Provê conteúdo o mais próximo possível do usuário
+  > 
   > Amaxon Route 53 (Serviço DNS) Ajuda os clientes a redirecionar corretamente as requisições
 
 <img width="919" height="513" alt="image" src="https://github.com/user-attachments/assets/20097ba3-3e89-437b-b502-ac5317a502f2" />
@@ -75,9 +86,11 @@
 - Tipos de instância:
   - Uso Geral
     > Equilíbrio de recursos de computação, memória e rede
+    > 
     > Indicado para servidores de aplicativo, jogo, backend, banco de dados pequenos
   - Otimizadas para computação
     > Mesmo uso do anterior mas que exija mais performance
+    > 
     > Ideal também para processamento em lote
   - Otimizadas para memória
     > Projeto para alto desempenho no processamento de grandes quantidades de memória e processamento em tempo real de dados
@@ -116,9 +129,13 @@
 - Capacidade automaticamente ajustada pelo serviço, sem necessidade de nenhuma configuração
   - AWS Lambda
     > Execução de código sem provisionar servidores
+    > 
     > Código organizado em funções
+    > 
     > Escolha da linguagem de programação
+    > 
     > Executa a partir de eventos ou chamadas diretas a API do Lambda
+    > 
   - O custo é por tempo de CPU
 
 ## Containers em AWS
@@ -194,12 +211,18 @@
 ## Amazon S3 (Simple Storage Service)
 - Armazenamento de objetos (Dados, Metadados, Chave)
   > Valor (Dados): O contúdo que você está armazenando
+  > 
   > Metadados: Um conjunto de pares de nome-valor com o qual é possível armazenar informações relacionadas ao objeto
+  > 
   > Chave: Nome que você atribui ao objeto. Usado para recuperar o objeto
+  > 
 - Os uploads dos objetos estão dentro dos buckets (data.json)
   > Máximo 100 buckets na sua conta
+  > 
   > Objetos de 0 a 5TB de tamanho
+  > 
   > É um contêiner para objetos armazenados no Amazon S3
+  > 
 - Casos de uso mais comuns
   - Data Lakes
   - Arquivamento de dados
@@ -333,7 +356,40 @@ Repositório -> https://github.com/andressasmedeiros/relatorio_AWS
 - Agrupamento hierárquicos
 - Possibilida utilizar políticas de controle de serviço (SCPs)
 
+---
+# Monitoramento e Análise na AWS
 
+## Amazon CloudWatch
+- Serviço que coltea e visualiza logs, métricas e dados de eventos em tempo real
+- Métricas de infraestrutura, serviços e aplicações
+- Permitir definir alarmes com basese nas métricas
+- Alarmes podem disparar ações
+
+## AWS CloudTrail
+- Transações / Chamadas de API
+- Auditoria
+- Cada transição é registrada no CloudTrail
+- Dados salvos em buckets S3
+
+<img width="988" height="427" alt="image" src="https://github.com/user-attachments/assets/637e5cf8-c555-4225-a195-18925bb2d8fa" /><br>
+
+
+## AWS Trusted Advisor
+- "Consultor automatizado"
+- Inspeciona ambiente AWS em tempo real
+- Faz recomendações com base em boas práticas recomendadas pela AWS
+- Pode Configurar alertas de e-mail
+- Pilares
+   > Otimização de custos
+   > 
+   > Desempenho
+   > 
+   > Segurança
+   > 
+   > Tolerância a falhas
+   > 
+   > Limites de serviço
+<img width="1027" height="246" alt="image" src="https://github.com/user-attachments/assets/101968ed-d9f8-4938-8ae0-b035874cae65" />
 
 ---
 > ⚠️ **Observação:** Este módulo de estudos foi desenvolvido com base no curso disponibilizado pela plataforma DIO. Algumas imagens e conteúdos utilizados pertencem à plataforma e são empregados aqui exclusivamente para fins didáticos, visando a fixação do meu aprendizado.
