@@ -138,7 +138,7 @@
     > 
   - O custo é por tempo de CPU
 
-## Containers em AWS
+## Contêiners em AWS
 - ECR - Elastic Container Registry
 <img width="1113" height="297" alt="image" src="https://github.com/user-attachments/assets/591f5e6e-c5a2-4ccf-9e4d-7cb3fb3d6cf6" /><br>
 
