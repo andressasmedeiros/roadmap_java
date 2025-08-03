@@ -1,5 +1,9 @@
 # Cloud Computing com AWS
 ---
+## Criar sua conta na AWS
+- Link -> https://portal.aws.amazon.com/billing/signup?nc2=h_mobile&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation&language=pt_br#/start/email
+- Após criar a conta ela fica como root (não deve ser utilizada devido acesso total)
+- Criar sua conta IAM
 
 ### O que é Cloud?
 - Você acessa servidor, banco de dados na nuvem por meio da internet, pagando pelo uso.
