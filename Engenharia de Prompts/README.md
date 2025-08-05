@@ -97,8 +97,10 @@ Um bom prompt fornece contexto, direção e formato esperado, permitindo que a I
 ---
 
 <img width="1079" height="803" alt="image" src="https://github.com/user-attachments/assets/6aed2ca3-b4fc-40df-bb5e-7f028e66af81" /><br>
-<img width="1079" height="803" alt="image" src="https://github.com/user-attachments/assets/450b328b-5855-4419-afa3-8cfe594e0c34" /><br>
+<img width="1077" height="782" alt="image" src="https://github.com/user-attachments/assets/30b05417-854c-4b66-95ab-f9113f9a5867" />
+<br>
 
 
 ---
 > ⚠️ **Observação:** Este módulo de estudos foi desenvolvido com base no curso disponibilizado pela plataforma DIO. Algumas imagens e conteúdos utilizados pertencem à plataforma e são empregados aqui exclusivamente para fins didáticos, visando a fixação do meu aprendizado.
+
