@@ -2,6 +2,7 @@
 
 Este repositório foi criado para **fins de estudo e prática**, abordando diversos tópicos do ecossistema Java e tecnologias complementares que são fundamentais para o desenvolvimento de software moderno.
 
+[Link para planilha com o andamento dos conteúdos](https://docs.google.com/spreadsheets/d/1t4F_DkFJPOdvap86LYJn-TX3CVGTCbLvCxQoVolR9oo/edit?usp=sharing)
 ---
 
 ## 🎯 Objetivo
