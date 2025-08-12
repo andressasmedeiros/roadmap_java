@@ -29,8 +29,6 @@ As duas interfaces raiz da classe collection Java são:
    - Implementações: classes concretas que realizam essas interfaces (ArrayList, HashSet, HashMap, etc.).
    - Algoritmos utilitários: métodos em Collections e Arrays para ordenar, buscar, embaralhar, etc.
  
->
-## [Projeto que usei Collection Framework](https://github.com/andressasmedeiros/exercicio-collections)
 ---
 
 # List
