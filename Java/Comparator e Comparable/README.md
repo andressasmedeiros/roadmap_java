@@ -20,6 +20,7 @@
 - Um `Comparator` está presente no pacote `java.util`.
 - Podemos ordenar os elementos da lista do tipo `Comparator` usando o método `Collections.sort(List, Comparator)`.
 
+[Respositório que usei Comparable e Comparator](https://github.com/andressasmedeiros/exercicio-collections)
 ---
 Exemplo:
 ```java
@@ -125,3 +126,4 @@ public class Main {
 
 ---
 > ⚠️ **Observação:** Este módulo de estudos foi desenvolvido com base no curso disponibilizado pela plataforma DIO. Algumas imagens e conteúdos utilizados pertencem à plataforma e são empregados aqui exclusivamente para fins didáticos, visando a fixação do meu aprendizado.
+
