@@ -5,9 +5,47 @@ Uma **interface** em Java é um **contrato** que define métodos (e constantes) 
 Diferente de uma classe, a interface não descreve *como* as coisas são feitas, apenas *o que* precisa ser feito.  
 A partir do Java 8, interfaces também podem conter métodos `default` (com implementação) e `static`.
 
+### Explicação:
+Você cria uma interface com variável que se comporta como polimorfismo, tipo implementa `Voar`, pode ser usada em `Passaro` e `Avião`. 
+`Passaro` e `Avião` poderiam herdar de `Voar`(se não fosse uma interface), porém se `Passaro` já herda de `Animal` não poderia herdar também de `Voar`pois em Java uma classe só pode herdar de uma única outra classe.
+Ex: em classe abstrata você coloca `Animal` pode ter métodos implementados: dormir, nome, idade... métodos com comportamentos padrão.
+Na interface, somente um contrato sem se preocupar com implementação ou estado, interfaces não tem atributos apenas constantes.
+
+Exemplo de interface:
+```java
+   interface Animal {
+       void emitirSom();
+   }
+```
+Exemplo de classe abstrata:
+```java
+  abstratic class Animal {
+       String nome;
+       void dormir() {
+         System.out.println("dormindo");
+       }
+   abstratic void emitirSom();
+   }
+   ```
+- Apartir do java 8 a ionterface pode ter instâncias
+- Podem atributos porém
+```java
+public static final
+```
+- Não podem construtor
+- Interface = comportamento
+- Classe abstrata = comportamento + estado
 ---
 
-## Para que servem?
+## Quando usar interface?
+- Use quando você quer definirum contrato de comportamento que várias classes (diferentes entre si) devem seguir
+  > Podem fazer - coisas que algém pode fazer, mas não tem atributos em comum
+
+## Quando usar classe abstrata
+- Use quando você quer criar uma base com comportamento e atributos comuns e que outras classes vão herdar
+  > É um tipo de - coisas que são de um mesmo tipo, com características e ações parecidas
+
+## Porque usar Interface
 - **Abstração**: esconde detalhes da implementação, focando apenas no comportamento esperado.  
 - **Polimorfismo**: permite que diferentes classes implementem a mesma interface de formas distintas.  
 - **Flexibilidade no design**: facilita trabalhar com abstrações ao invés de classes concretas (`List` ao invés de `ArrayList`).  
@@ -42,7 +80,7 @@ A partir do Java 8, interfaces também podem conter métodos `default` (com impl
    ```
 
 3. **Interface funcional (Functional Interface)**  
-   - Possui **apenas um método abstrato**.  
+   - Possui **apenas UM método abstrato**.  
    - Usada em conjunto com **expressões lambda**.  
    - Identificada pela anotação `@FunctionalInterface`.  
    ```java
@@ -239,3 +277,4 @@ Essas interfaces são a base para trabalhar com **lambdas e Streams** no Java mo
 ## Versões mais recentes (Java SE 21)
 - [@FunctionalInterface (Java SE 21)](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/FunctionalInterface.html)
 - [Pacote java.util.function (Java SE 21)](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/function/package-summary.html)
+
