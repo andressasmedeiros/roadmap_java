@@ -2,6 +2,7 @@
 
 As **Lambda Expressions** e **Method References** foram introduzidas no Java 8 e são recursos fundamentais para escrever código mais conciso e expressivo, especialmente quando trabalhamos com a **Stream API** e **programação funcional**.
 
+[Projeto utilizado Streams](https://github.com/andressasmedeiros/teste_pratico_iniflex)
 ---
 
 ## Lambda Expressions
@@ -143,3 +144,4 @@ nomes.stream()
 - Lambda → define o que fazer de forma direta.  
 - Method Reference → reutiliza um método que já existe.  
 - Ambos trabalham muito bem juntos com a **Stream API**.
+
