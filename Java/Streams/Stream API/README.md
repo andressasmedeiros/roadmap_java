@@ -4,6 +4,7 @@ A **Stream API** foi introduzida no **Java 8** e permite processar coleções de
 
 <img width="2560" height="1108" alt="image" src="https://github.com/user-attachments/assets/5313bd08-c187-4bc3-a0dd-6353806fb0ce" />
 
+[Projeto utilizado Streams](https://github.com/andressasmedeiros/teste_pratico_iniflex)
 ---
 
 ## O que é a Stream API?
@@ -142,3 +143,4 @@ List<String> resultado = nomes.stream()
 **Resumo rápido**:
 - Imperativo → "faça isso, depois isso, depois isso..."
 - Funcional → "pegue esses dados, filtre, transforme e me devolva o resultado".
+
